@@ -1,5 +1,6 @@
 const initialState = {
-    films: []
+    isReady: false,
+    items: []
 }
 
 
@@ -8,15 +9,13 @@ export default (state = initialState, action) => {
         case "SET_FILMS":
             return {
                 ...state,
-                films: action.payload
+                items: action.payload,
+                isReady: true
             }
-        case "ADD_FILMS":
+        case "SET_IS_READY":
             return {
                 ...state,
-                films: [
-                    ...state.films,
-                    action.payload
-                ]
+                isReady: action.payload,
             }
         default:
             return state

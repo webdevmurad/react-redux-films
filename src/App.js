@@ -1,9 +1,22 @@
 import React from 'react';
 import {connect} from 'react-redux'
 import {setFilms} from './actions/films'
+import axios from 'axios';
 
 class App extends React.Component {
+  componentWillMount() {
+    const {setFilms} = this.props
+    axios.get('/films.json').then(({data}) => {
+      console.log(data)
+      setFilms(data)
+    })
+
+  }
+
+
   render() {
+    const {films} = this.props
+    console.log(films)
     return (
       <div className="App">
   
@@ -12,8 +25,8 @@ class App extends React.Component {
   }
 }
 
-const mapStateToProps = state => ({
-  ...state
+const mapStateToProps = ({films}) => ({
+  films: films.items
 })
 
 const mapDispatchToProps  = dispatch => ({
