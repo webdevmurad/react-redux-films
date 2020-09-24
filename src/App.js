@@ -3,11 +3,15 @@ import {connect} from 'react-redux'
 import {setFilms} from './actions/films'
 import axios from 'axios';
 
+import { Container} from 'semantic-ui-react'
+
+import Menu from './components/Menu'
+import FilmCard from './components/FilmCard'
+
 class App extends React.Component {
   componentWillMount() {
     const {setFilms} = this.props
     axios.get('/films.json').then(({data}) => {
-      console.log(data)
       setFilms(data)
     })
 
@@ -15,18 +19,20 @@ class App extends React.Component {
 
 
   render() {
-    const {films} = this.props
-    console.log(films)
+    const {films, isReady} = this.props
+
     return (
-      <div className="App">
-  
-      </div>
+      <Container className="App">
+        <Menu/>
+        <FilmCard films={films} isReady={isReady}/>
+      </Container>
     );
   }
 }
 
 const mapStateToProps = ({films}) => ({
-  films: films.items
+  films: films.items,
+  isReady: films.isReady
 })
 
 const mapDispatchToProps  = dispatch => ({
