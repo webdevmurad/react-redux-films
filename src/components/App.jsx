@@ -5,6 +5,7 @@ import { Container} from 'semantic-ui-react'
 
 import Menu from './Menu'
 import FilmCard from './FilmCard'
+import Filter from '../containers/Filter'
 
 class App extends React.Component {
   componentWillMount() {
@@ -21,6 +22,7 @@ class App extends React.Component {
     return (
       <Container className="App">
         <Menu/>
+        <Filter/>
         <FilmCard films={films} isReady={isReady}/>
       </Container>
     );
