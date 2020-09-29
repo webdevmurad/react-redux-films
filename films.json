@@ -1,0 +1,154 @@
+[
+    {
+      "id": 0,
+      "title": "Рейд",
+      "producer": "Гарет Эванс",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/8/82/%D0%A0%D0%B5%D0%B9%D0%B4.jpg",
+      "price": 200,
+      "rating": 3
+    },
+    {
+      "id": 1,
+      "title": "Рейд 2",
+      "producer": "Гарет Эванс",
+      "image": "https://www.kinopoisk.ru/images/film_big/669466.jpg",
+      "price": 250,
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "title": "Ниндзя убийца",
+      "producer": "Джеймс МакТиг",
+      "image": "https://www.kinopoisk.ru/images/film_big/406353.jpg",
+      "price": 250,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "title": "Джон Уик",
+      "producer": "Чад Стахелски",
+      "image": "https://www.kinopoisk.ru/images/film_big/762738.jpg",
+      "price": 741,
+      "rating": 3
+    },
+    {
+      "id": 4,
+      "title": "Джон Уик 2",
+      "producer": "Чад Стахелски",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/f/f1/John_Wick_2.jpg",
+      "price": 317,
+      "rating": 1
+    },
+    {
+      "id": 5,
+      "title": "Джон Уик 3",
+      "producer": "Чад Стахелски",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/1/1d/John_Wick_3.jpg",
+      "price": 254,
+      "rating": 0
+    },
+    {
+      "id": 6,
+      "title": "Хоббит. Нежданное путешествие",
+      "producer": "Питер Джексон",
+      "image": "https://www.kinopoisk.ru/images/film_big/278522.jpg",
+      "price": 573,
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "title": "Хоббит: Пустошь Смауга",
+      "producer": "Питер Джексон",
+      "image": "https://www.kinopoisk.ru/images/film_big/408876.jpg",
+      "price": 246,
+      "rating": 0
+    },
+    {
+      "id": 8,
+      "title": "Хоббит: Битва пяти воинств",
+      "producer": "Питер Джексон",
+      "image": "https://www.kinopoisk.ru/images/film_big/694633.jpg",
+      "price": 347,
+      "rating": 5
+    },
+    {
+      "id": 9,
+      "title": "Отступники",
+      "producer": "Мартин Скорсезе",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/e/ed/%D0%9E%D1%82%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%B8%D0%BA%D0%B8_%28%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80%29.jpg",
+      "price": 882,
+      "rating": 2
+    },
+    {
+      "id": 10,
+      "title": "Джокер",
+      "producer": "Тодд Филлипс",
+      "image": "https://www.kinopoisk.ru/images/film_big/1048334.jpg",
+      "price": 829,
+      "rating": 1
+    },
+    {
+      "id": 11,
+      "title": "Тренировочный день",
+      "producer": "Антуан Фукуа",
+      "image": "https://fs.kinomania.ru/image/file/film/c/95/c9514da615d95b3652732e4a0a5fb688.306.443.jpeg",
+      "price": 389,
+      "rating": 2
+    },
+    {
+      "id": 12,
+      "title": "Бешеные псы",
+      "producer": "Квентин Тарантино",
+      "image": "https://citaty.info/files/posters/15042.jpg",
+      "price": 424,
+      "rating": 3
+    },
+    {
+      "id": 13,
+      "title": "Джанго освобождённый",
+      "producer": "Квентин Тарантино",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/b/ba/Django_Unchained.jpg",
+      "price": 157,
+      "rating": 2
+    },
+    {
+      "id": 14,
+      "title": "Апокалипсис",
+      "producer": "Мел Гибсон",
+      "image": "https://st.kp.yandex.net/images/film_iphone/iphone360_160977.jpg",
+      "price": 664,
+      "rating": 0
+    },
+    {
+      "id": 15,
+      "title": "Логан",
+      "producer": "Джеймс Мэнголд",
+      "image": "https://resizer.mail.ru/p/c75520da-5d79-54f7-9067-f5331ef79762/AAACZuWcP6dapsT0UMmJ3E7CupEXxIJJcV70siU17j9ii1nFwnrip0SnIhqofuIjgHNZVsX3nnrXicM7vuEyklBWaIM.jpg",
+      "price": 476,
+      "rating": 4
+    },
+    {
+      "id": 17,
+      "title": "Планета обезьян: Война",
+      "producer": "Мэтт Ривз",
+      "image": "https://upload.wikimedia.org/wikipedia/ru/thumb/3/33/War_for_the_Planet_of_the_Apes.jpg/211px-War_for_the_Planet_of_the_Apes.jpg",
+      "price": 837,
+      "rating": 4
+    },
+    {
+      "id": 18,
+      "title": "Аватар",
+      "producer": "Джеймс Кэмерон",
+      "image": "https://www.kinopoisk.ru/images/film_big/251733.jpg",
+      "price": 796,
+      "rating": 5
+    },
+    {
+      "id": 19,
+      "title": "Выживший",
+      "producer": "Алехандро Гонсалес Иньярриту",
+      "image": "https://www.kinopoisk.ru/images/film_big/522941.jpg",
+      "price": 399,
+      "rating": 5
+    }
+  ]
