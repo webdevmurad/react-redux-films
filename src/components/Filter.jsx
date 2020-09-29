@@ -1,5 +1,6 @@
 import React from 'react'
 import { Menu, Input } from 'semantic-ui-react'
+import PropTypes from 'prop-types'
 
 
 
@@ -28,6 +29,20 @@ const Filter = ({setFilter, filterBy, searchQuery, setSearchQuery}) => {
             </Menu.Item>
         </Menu>
     )
+}
+
+PropTypes.Filter = {
+    setFilter: PropTypes.func,
+    filterBy: PropTypes.string,
+    searchQuery: PropTypes.string,
+    setSearchQuery: PropTypes.func
+}
+
+Filter.defaultProps = {
+    setFilter: () => {},
+    filterBy: '',
+    searchQuery: '',
+    setSearchQuery: () => {}
 }
 
 export default Filter
