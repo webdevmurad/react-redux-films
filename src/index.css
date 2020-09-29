@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  padding-top: 20px;
+}
+
+.wrap-cards {
+  justify-content: center;
+}
+
+.content-loader {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/* Медиа запросы */
+
+@media (max-width: 668px) {
+  .ui .card {
+    width: 200px!important;
+  }
+  .menu__filter {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 380px) {
+  .ui .menu .item{
+    padding: 5px!important;
+  }
+  .right menu {
+    margin-left: 0px!important;
+  }
+}

@@ -3,8 +3,8 @@ import {bindActionCreators} from 'redux'
 import * as filterActions from '../actions/filter'
 import Filter from '../components/Filter'
 
-const mapStateToProps = ({films}) => ({
-    filterBy: films.filterBy
+const mapStateToProps = ({ filter}) => ({
+    filterBy: filter.filterBy
 })
   
 const mapDispatchToProps  = dispatch => ({

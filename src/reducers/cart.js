@@ -7,7 +7,7 @@ const initialState = {
 
 export default (state = initialState, action) => {
     switch (action.type) {
-        case "ADD_BOOK_TO_CART":
+        case "ADD_FILM":
             return {
                 ...state,
                 items: [
@@ -15,10 +15,10 @@ export default (state = initialState, action) => {
                     action.payload
                 ]
             }
-        case "REMOVE_BOOK_FROM_CART":
+        case "REMOVE_FILM":
             return {
                 ...state,
-                items: state.items.filter(o => o.id !== action.payload.id)
+                items: state.items.filter(o => o.id !== action.payload)
             }
         default:
             return state
