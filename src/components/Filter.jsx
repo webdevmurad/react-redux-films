@@ -1,12 +1,12 @@
 import React from 'react'
-import { Menu } from 'semantic-ui-react'
+import { Menu, Input } from 'semantic-ui-react'
 
 
 
-const Filter = ({setFilter, filterBy}) => {
+const Filter = ({setFilter, filterBy, searchQuery, setSearchQuery}) => {
 
     return (
-        <Menu secondary>
+        <Menu className="menu__filter" secondary>
             <Menu.Item
                 active={filterBy === 'all'}
                 onClick={setFilter.bind(this, 'all')}
@@ -23,6 +23,9 @@ const Filter = ({setFilter, filterBy}) => {
                 active={filterBy === 'producer'}
                 onClick={setFilter.bind(this, 'producer')}
             >Автор</Menu.Item>
+            <Menu.Item>
+                <Input onChange={e => setSearchQuery(e.target.value)} icon="search" value={searchQuery} placeholder="Введите для поиска ..."/>
+            </Menu.Item>
         </Menu>
     )
 }

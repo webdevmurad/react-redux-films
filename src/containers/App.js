@@ -4,24 +4,33 @@ import * as filmActions from '../actions/films'
 import App from '../components/App'
 import orderBy from 'lodash/orderBy'
 
-const sortBy = (books, filterBy) => {
+const sortBy = (films, filterBy) => {
     switch (filterBy) {
-        case 'all':
-            return books
         case 'price_high':
-            return orderBy(books, 'price', 'desc')
+            return orderBy(films, 'price', 'desc')
         case 'price_low':
-            return orderBy(books, 'price', 'asc')
+            return orderBy(films, 'price', 'asc')
         case 'producer':
-            return orderBy(books, 'producer', 'asc')
+            return orderBy(films, 'producer', 'asc')
         default: 
-            return books;
+            return films;
     }
 }
 
+const filterFilms = (films, searchQuery) =>
+    films.filter(
+        o => 
+            o.title.toLowerCase().indexOf(searchQuery.toLowerCase()) >= 0 ||
+            o.producer.toLowerCase().indexOf(searchQuery.toLowerCase()) >= 0
+    )
 
-const mapStateToProps = ({films}) => ({
-    films: sortBy(films.items, films.filterBy),
+const searchFilms = (films, filterBy, searchQuery) => {
+    return sortBy(filterFilms(films, searchQuery), filterBy)
+}
+
+
+const mapStateToProps = ({films, filter}) => ({
+    films: films.items && searchFilms(films.items, filter.filterBy, filter.searchQuery),
     isReady: films.isReady
 })
   
@@ -30,6 +39,3 @@ const mapDispatchToProps  = dispatch => ({
 })
   
 export default connect(mapStateToProps, mapDispatchToProps)(App);
-
-
-// setFilms: films => dispatch(setFilms(films))
