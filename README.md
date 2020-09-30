@@ -10,5 +10,6 @@ React + Redux + Semantic-UI
 
 Axios, lodash, react-content-loader, prop-types.
 
+Проект выложил на firebase
 
-Ссылка на проект https://webdevmurad.github.io/react-redux-films/
+Ссылка на проект https://react-films-magazine.web.app/

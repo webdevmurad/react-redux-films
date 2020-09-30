@@ -41,7 +41,6 @@ PropTypes.Filter = {
 Filter.defaultProps = {
     setFilter: () => {},
     filterBy: '',
-    searchQuery: '',
     setSearchQuery: () => {}
 }
 
